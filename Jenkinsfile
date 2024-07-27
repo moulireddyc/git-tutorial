@@ -10,7 +10,7 @@ pipeline {
     stage('Script run') {
       steps {
         sh '''echo "Print server uptime"
-uptime'''
+wmic path Win32_OperatingSystem get LastBootUpTime'''
       }
     }
 
